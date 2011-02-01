@@ -26,7 +26,7 @@ a, a.visited {
 	outline:none;
 }
 
-h1, h2, h3, p, ul, li {
+h1, h2, h3, h4, h5, p, ul, li {
 	padding:0;
 	margin:0;
 	font-size:100%;
@@ -269,17 +269,18 @@ input {
 	top:-3px;
 }
 
-#tags-panel input {
+#tags-panel li {
 	border:1px solid #333 !important;
 	margin-right:5px;
 	margin-bottom:5px;
 	padding-top:8px !important;
-	text-transform:uppercase;
-	font-size:14px !important;
+	color:#575757;
+	font-size:14px;
 	font-weight:lighter;
+	text-transform:uppercase;
 }
 
-#tags-panel input.active {
+#tags-panel li.active {
 	border:1px solid #575757 !important;
 }
 
@@ -326,6 +327,13 @@ input {
 	padding-top:15px;
 	padding-bottom:15px;
 	font-size:20px;
+	color:#fff;
+}
+
+.content h5 {
+	font-size:12px;
+	color:#c0c0c0;
+	padding-top:10px;
 }
 
 .content img.hero {
@@ -335,7 +343,8 @@ input {
 .content p {
 	font-size:15px;
 	font-weight:lighter;
-	line-height:20px;
+	line-height:22px;
+	padding-bottom:20px;
 }
 
 .row {
@@ -424,7 +433,7 @@ p.twitter_timestamp {
 
 .slideshow {
 	float:left;
-	width:530px;
+	width:550px;
 	padding-top:10px;
 	padding-left:20px;
 	position:relative;
@@ -469,4 +478,104 @@ p.twitter_timestamp {
 	top:30px;
 	left:30px;
 	background:transparent url(../img/logo_footer.gif) top left no-repeat;
+}
+
+/** search results styles **/
+
+.result {
+	float:left;
+	width:452px;
+	height:349px;
+	padding-top:10px;
+}
+
+.result.left {
+	padding-right:20px;
+}
+
+.result.right {
+	padding-left:20px;
+}
+
+.result img {
+	width:451px;
+}
+
+/** content page styles **/
+
+h4 {
+	font-size:12px;
+	color:#575757;
+	font-weight:normal;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+.article {
+	position:relative;
+	width:665px;
+	padding-right:20px;
+	float:left;
+}
+
+.sidebar {
+	padding-left:20px;
+	width:239px;
+	float:left;
+}
+
+.sidebar img {
+	width:235px;
+}
+
+.sidebar .post {
+	height:185px;
+	position:relative;
+}
+
+.sidebar .timestamp {
+	position:absolute;
+	bottom:18px;
+	right:0;
+	font-size:11px;
+}
+
+.sidebar .more {
+	float:right;
+	position:relative;
+	text-transform:lowercase;;
+}
+
+.sidebar .more a {
+	color:#c0c0c0;
+	font-size:12px;
+	font-weight:lighter;
+}
+
+.sidebar .twitter {
+	float:left;
+	position:relative;
+}
+
+.sidebar .twitter h3.twitter_content {
+	font-size:24px;
+	padding-top:0 !important;
+}
+
+.sidebar .twitter p.twitter_source {
+	font-size:16px;
+	padding-top:20px;
+	padding-bottom:5px;
+	color:#3b94cd;
+}
+
+.sidebar .twitter p.twitter_timestamp {
+	font-size:12px;
+	color:#666;
+	padding-bottom:10px;
+}
+
+.sidebar .popular {
+	float:left;
+	position:relative;
 }
